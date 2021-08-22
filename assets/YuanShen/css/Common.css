@@ -1,0 +1,183 @@
+/* 整体 */
+:root {
+  font-family: 'HarmonyOS Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+body {
+  margin: 0;
+  background-color: #FEFEFE;
+}
+
+/* 页眉 */
+header {
+  position: relative;
+  min-height: 200px;
+  background-image: url('../img/Mengde.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+header:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+header #title {
+  position: absolute;
+  bottom: 0;
+  left: 0.5em;
+  color: #FEFEFE;
+}
+
+header #logo {
+  position: absolute;
+  top: 0.4em;
+  left: 0.4em;
+  max-height: 130px;
+}
+
+header #mascot {
+  position: absolute;
+  top: 0.8em;
+  right: 0.8em;
+  max-height: 450px;
+}
+
+/* 正文 */
+article {
+  margin: auto 35px;
+  text-align: center;
+}
+
+/* 项目 */
+.item {
+  margin: 0.5em auto;
+}
+
+.item > .title {
+  display: inline-block;
+  margin: 0.5em auto;
+  font-weight: normal;
+  color: #FEFEFE;
+  background-color: burlywood;
+  padding: 4px 16px;
+  border: 5px double #FEFEFE;
+  border-radius: 22px;
+}
+
+.item > .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item > .content > * {
+  flex-basis: 20%;
+  margin: 0.5em 0;
+}
+
+.box {
+  border: 1px solid burlywood;
+  border-radius: 10px;
+  background-color: #F8F8F8;
+}
+
+.item > .content.box {
+  padding: 0.5em 0;
+}
+
+/* 统计卡 */
+.stat .val {
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+.stat .desc {
+  color: gray;
+  margin-top: 0.2em;
+  font-size: 0.9em;
+}
+
+/* 角色卡 */
+.char {
+  position: relative;
+}
+
+.char p {
+  margin: 0.1em auto;
+}
+
+.char .main {
+  position: relative;
+  display: inline-block;
+  max-width: 90%;
+  background-color: burlywood;
+  overflow: hidden;
+}
+
+.char .avatar {
+  display: block;
+  max-width: 100%;
+  background-color: #FEFEFE;
+  border-bottom-right-radius: 25px;
+}
+
+.char .title {
+  color: #F8F8F8;
+  font-weight: bold;
+}
+
+.char .title span {
+  margin: auto 0.3em;
+}
+
+.char .level:before {
+  content: 'Lv.';
+}
+
+.char .fetter:before {
+  content: '❤';
+  margin-right: 0.2em;
+}
+
+.char .star {
+  position: absolute;
+  bottom: 1em;
+  min-width: 100%;
+  color: gold;
+  font-size: 1.3em;
+  text-shadow: 0 0 5px black;
+  letter-spacing: -0.15em;
+}
+
+.char .element {
+  position: absolute;
+  top: 0.1em;
+  left: 0.1em;
+  max-width: 30px;
+  filter: saturate(1.3);
+}
+
+.char .constellation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0.2em 0.3em;
+  border-bottom-left-radius: 5px;
+  color: #F8F8F8;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+/* 页脚 */
+footer {
+  text-align: center;
+  color: gray;
+}

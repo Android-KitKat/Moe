@@ -1,0 +1,13 @@
+qq: 12345678 # QQ 账号
+password: password # QQ 密码
+prefix: / # 命令前缀
+platform: 5 # 登陆平台，1:安卓手机 2:aPad 3:安卓手表 4:MacOS 5:iPad(默认)。
+data_dir: data # 数据存放目录
+log_dir: logs # 日志存放目录
+log_level: info # 日志级别
+browser: # 浏览器
+  path: C:\Program Files\Google\Chrome\Application\chrome.exe # 路径
+  pages_limit: 5 # 标签页上限
+mihoyo: # 米哈游
+  cookie_cn: ltoken=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX; ltuid=100000001 # 米游社 Cookie
+  assets_source: default # 资源来源，default:默认 cn:国服 os:国际服。
