@@ -32,7 +32,7 @@
     "minimist": "^1.2.5",
     "moment": "^2.29.1",
     "node-fetch": "^2.6.1",
-    "oicq": "^1.19.3",
+    "oicq": "^1.19.5",
     "pug": "^3.0.2",
     "puppeteer-core": "^10.2.0",
     "ts-node": "^10.2.1",
