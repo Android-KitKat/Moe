@@ -88,7 +88,7 @@ async function bilibili(id: string, av?: boolean) {
   // 调用 API
   const res = await fetch(`https://api.bilibili.com/x/web-interface/view?${av ? 'aid' : 'bvid'}=${id}`);
   const json = await res.json();
-  if (json.code !== 0) throw new Error(`${json.code} ${json.message}`); // 如果是错误则抛出异常
+  if (json.code !== 0) throw new Error(`${json.message} (${json.code})`); // 如果是错误则抛出异常
   // 生成视频数据
   const base_url = 'https://www.bilibili.com/video/';
   return <VideoData>{
@@ -111,7 +111,7 @@ async function bilibiliShort(url: string) {
   // 未重定向则抛出异常
   if (!res.headers.has('location')) {
     const json = await res.json();
-    throw new Error(`${json.code} ${json.message}`);
+    throw new Error(`${json.message} (${json.code})`);
   }
   // 用重定向的地址获取视频数据
   return getVideoData(res.headers.get('location')!, 'bilibili_bv');
