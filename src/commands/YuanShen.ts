@@ -1,5 +1,5 @@
 import { Command } from '.';
-import { cqcode, segment } from 'oicq';
+import { segment } from 'oicq';
 import path from 'path';
 import moment from 'moment';
 import pug from 'pug';
@@ -26,7 +26,7 @@ const YuanShen: Command = {
   async execute(bot, data, args) {
     // 检查 UID
     if (!args._[0]) return data.reply('请指定玩家的 UID');
-    if (!isValidCnUid(args._[0])) return data.reply(`"${cqcode.text(args._[0])}"不是一个有效的 UID`);
+    if (!isValidCnUid(args._[0])) return data.reply(`"${args._[0]}"不是一个有效的 UID`);
 
     // 导入对象
     const { genshin } = bot;

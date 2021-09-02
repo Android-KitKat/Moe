@@ -27,10 +27,10 @@ const VideoPic: Command = {
         // 获取并生成视频信息
         try {
           const vdata = await getVideoData(args._[0], key);
-          const message: MessageElem[] = [
-            segment.text(`标题：${vdata.title}\n链接：${vdata.url}\n封面：${vdata.pic}`)
+          const message: (MessageElem | string)[] = [
+            `标题：${vdata.title}\n链接：${vdata.url}\n封面：${vdata.pic}`
           ];
-          if (args.picture) message.unshift(segment.image(vdata.pic), segment.text('\n'));
+          if (args.picture) message.unshift(segment.image(vdata.pic), '\n');
           return data.reply(message);
         } catch (error) {
           data.reply(error.message);
