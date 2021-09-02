@@ -11,12 +11,13 @@ const CommandHandle: Module = (bot) => {
   client.on('message', async data => {
     if (!data.raw_message.startsWith(config.prefix)) return; // 判断是否有命令前缀
 
-    // 判断内容是否为空
-    const str = data.raw_message.slice(config.prefix.length).trim();
-    if (!str.length) return;
-
     // 解析命令文本
-    const args = str.match(/"[^"]*"|[^\s"]+/g)!.map(v => v.replace(/^"(.*)"$/, '$1'));
+    const str = data.raw_message.slice(config.prefix.length).trim();
+    const args = str.match(/"(\\"|[^"])*"|(\\"|[^\s"])+/g)?.map(v => v
+      .replace(/^"(.*)"$/s, '$1')
+      .replace(/\\"/g, '"')
+    );
+    if (!args) return;
     const name = args.shift()!;
 
     // 查找命令
