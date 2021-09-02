@@ -13,6 +13,7 @@ export interface Configuration {
   log_level: ConfBot['log_level'];
   browser: ConfBrowser;
   mihoyo: ConfMihoyo;
+  thecatapi_key?: string;
 }
 
 /** 浏览器相关配置 */

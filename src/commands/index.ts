@@ -5,6 +5,7 @@ import Help from './Help';
 import About from './About';
 import VideoPic from './VideoPic';
 import YuanShen from './YuanShen';
+import Cat from './Cat';
 
 /** 机器人命令 */
 export interface Command {
@@ -34,5 +35,6 @@ export default [
   Help,
   About,
   VideoPic,
-  YuanShen
+  YuanShen,
+  Cat
 ];

@@ -11,3 +11,4 @@ browser: # 浏览器
 mihoyo: # 米哈游
   cookie_cn: ltoken=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX; ltuid=100000001 # 米游社 Cookie
   assets_source: default # 资源来源，default:默认 cn:国服 os:国际服。
+# thecatapi_key: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx # 猫猫图片接口密钥
