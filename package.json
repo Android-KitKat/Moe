@@ -27,12 +27,12 @@
   },
   "homepage": "https://github.com/Android-KitKat/Moe#readme",
   "dependencies": {
-    "genshin-kit": "^2.2.0",
+    "genshin-kit": "^2.4.1",
     "js-yaml": "^4.1.0",
     "minimist": "^1.2.5",
     "moment": "^2.29.1",
-    "node-fetch": "^2.6.1",
-    "oicq": "^1.19.7",
+    "node-fetch": "^2.6.2",
+    "oicq": "^1.20.1",
     "pug": "^3.0.2",
     "puppeteer-core": "^10.2.0",
     "ts-node": "^10.2.1",
@@ -42,7 +42,7 @@
   "devDependencies": {
     "@types/js-yaml": "^4.0.3",
     "@types/minimist": "^1.2.2",
-    "@types/node": "^16.7.1",
+    "@types/node": "^16.9.1",
     "@types/node-fetch": "^2.5.12",
     "@types/pug": "^2.0.5"
   }
