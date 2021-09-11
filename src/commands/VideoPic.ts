@@ -33,8 +33,7 @@ const VideoPic: Command = {
           if (args.picture) message.unshift(segment.image(vdata.pic), '\n');
           return data.reply(message);
         } catch (error) {
-          data.reply(error.message);
-          throw error;
+          return data.reply(error.message);
         }
       }
     }
