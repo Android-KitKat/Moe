@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/Android-KitKat/Moe#readme",
   "dependencies": {
-    "genshin-kit": "^2.4.1",
+    "genshin-kit": "^2.4.2",
     "js-yaml": "^4.1.0",
     "minimist": "^1.2.5",
     "moment": "^2.29.1",
